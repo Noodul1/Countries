@@ -64,6 +64,8 @@ public class Main {
    * method to get its image file name and use the code below to put the image in
    * the GUI.
    */
+  // pre-condition: game is running
+  //post-condition: displays the country's image
   public void showCountry() {
     // Get the country at index from countryArray
     Country c = countryArray[index];
@@ -81,6 +83,8 @@ public class Main {
    * back to 0. Clear the outputLabel to empty string using setText, and call
    * showCountry();
    */
+  // pre-condition: next button clicked
+  // post-condition: display and set next country and question
   public void nextButtonClick() {
     index++;
     if (index > 9) {
@@ -110,6 +114,8 @@ public class Main {
    * toString() method and save the result, print it out with System.out.println
    * and as an argument to outputLabel.setText( text to print out );
    */
+  // pre-condition: review button clicked
+  // post-condition: displays string with the country's name, capital, and language
   public void reviewButtonClick() {
     Country country = countryArray[index];
     String sentence = country.toString();
@@ -124,6 +130,8 @@ public class Main {
    * Get the user's answer using scan.nextLine() and check if it is equal to the
    * country's data using its get methods and print out correct or incorrect.
    */
+  //pre-condition: quiz button clicked, user must input answer before clicking
+  //post-condition: displays either "correct" or "loud incorrect buzzer" 
   public void quizButtonClick() {
     if((input.getText().contentEquals(answer))){
       outputLabel.setText("correct");
