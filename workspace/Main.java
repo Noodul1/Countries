@@ -160,7 +160,7 @@ public class Main {
     imageLabel = new JLabel(img);
     // and one for output
     outputLabel = new JLabel();
-    jFrame.add(imageLabel);
+    jFrame.add(imageLabel); 
     jFrame.add(outputLabel);
     input = new JTextField(20);
     jFrame.add(input);
